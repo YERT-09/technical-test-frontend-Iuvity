@@ -1,0 +1,17 @@
+.fa-ban{
+    color: red;
+}
+.fa-plus{
+    color:forestgreen;
+}
+.col-2{
+    display: flex;
+    justify-content:left;
+}
+h1{
+    font-family: "Courier New", monospace;
+}
+.form{
+    margin-right: 30%;
+    margin-left: 30%;
+}
