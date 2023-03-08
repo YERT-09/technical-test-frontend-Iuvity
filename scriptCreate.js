@@ -24,8 +24,8 @@ function handleSubmit(event) {
     const data = new FormData(event.target);
     const value = Object.fromEntries(data.entries());
     let jsonData = $.parseJSON(JSON.stringify(value))
-    jsonData['productCode'] = parseInt(jsonData['productCode'])
-    jsonData['productPrice'] = parseInt(jsonData['productPrice'])
-    jsonData['productQuantity'] = parseInt(jsonData['productQuantity'])
+    jsonData['productCode'] = Number(jsonData['productCode'])
+    jsonData['productPrice'] = Number(jsonData['productPrice'])
+    jsonData['productQuantity'] = Number(jsonData['productQuantity'])
     createProduct(jsonData)
 }
